@@ -1,0 +1,111 @@
+/* Adventure Sports - rafting.css */
+
+/* Color scheme and fonts */
+:root {
+  --primary-color: #0b6e8a;   /* river teal - headings, links */
+  --secondary-color: #e6f3f7; /* pale foam - overlay panel background */
+  --accent1-color: #12303d;   /* deep navy - body text, h1 banner */
+  --accent2-color: #b85c0a;   /* burnt orange - hover highlights */
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Reset the box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Limit the page width and center the content */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Hero with overlays */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 380px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+/* Extras: keep the list nav, logo, and icons tidy */
+header img {
+  max-width: 160px;
+  margin: 16px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+nav a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent2-color);
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+}
