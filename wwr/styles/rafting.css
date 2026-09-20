@@ -1,16 +1,11 @@
-/* Adventure Sports - rafting.css */
-
-/* Color scheme and fonts */
 :root {
-  --primary-color: #0b6e8a;   /* river teal - headings, links */
-  --secondary-color: #e6f3f7; /* pale foam - overlay panel background */
-  --accent1-color: #12303d;   /* deep navy - body text, h1 banner */
-  --accent2-color: #b85c0a;   /* burnt orange - hover highlights */
+  --primary-color: #0b6e8a;
+  --secondary-color: #e6f3f7;
+  --accent1-color: #12303d;
   --heading-font: Georgia, "Times New Roman", serif;
   --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Reset the box model */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +17,6 @@ body {
   color: var(--accent1-color);
 }
 
-/* Limit the page width and center the content */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -42,7 +36,6 @@ nav, p, section, article {
   text-decoration: none;
 }
 
-/* Hero with overlays */
 .hero {
   position: relative;
 }
@@ -53,7 +46,7 @@ nav, p, section, article {
   height: auto;
 }
 
-.hero h1 {
+h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -70,42 +63,9 @@ nav, p, section, article {
   right: 0;
   width: 380px;
   background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .hero article img {
   float: right;
   width: 125px;
-  margin: 8px;
-  border-radius: 8px;
-}
-
-/* Extras: keep the list nav, logo, and icons tidy */
-header img {
-  max-width: 160px;
-  margin: 16px;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 16px;
-}
-
-nav a {
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: var(--accent2-color);
-}
-
-.socialmedia img {
-  width: 32px;
-  height: 32px;
 }
