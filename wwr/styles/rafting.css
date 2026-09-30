@@ -32,6 +32,40 @@ nav, p, section, article {
   padding: 8px;
 }
 
+/* ===== NUEVO: Header con CSS Grid ===== */
+header {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+}
+
+#logo {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* ===== NUEVO: Nav con Flexbox ===== */
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+.navigation li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* ===== FIN DE LO NUEVO ===== */
+
 .socialmedia a {
   text-decoration: none;
 }
