@@ -39,7 +39,6 @@ h1 {
   color: #fff;
 }
 
-/* ---------- Header y navegación ---------- */
 header {
   display: grid;
   grid-template-columns: 120px 1fr 1fr;
@@ -87,7 +86,6 @@ header nav a:hover {
   color: var(--primary-color);
 }
 
-/* ---------- Hero ---------- */
 .hero {
   position: relative;
 }
@@ -105,7 +103,7 @@ header nav a:hover {
   width: 100%;
   padding: 0.5rem 1rem;
   text-align: center;
-  background: rgba(18, 48, 61, 0.8);
+  background: #12303dcc;
 }
 
 .hero-text h1,
@@ -127,7 +125,7 @@ header nav a:hover {
   line-height: 1.4;
 }
 
-/* Cuadro de misión en la esquina inferior derecha */
+
 .hero article {
   position: absolute;
   right: 0;
@@ -146,7 +144,7 @@ header nav a:hover {
   margin: 0 0 0.5rem 1rem;
 }
 
-/* ---------- Footer ---------- */
+
 footer {
   padding: 1rem 0;
   text-align: center;
@@ -166,7 +164,7 @@ footer {
   width: 28px;
 }
 
-/* ===== CONTACT PAGE ===== */
+
 .contact-info,
 .team {
   text-align: center;
