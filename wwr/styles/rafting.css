@@ -28,11 +28,27 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* ---------- Header y navegación ---------- */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
   align-items: center;
   padding: 1rem 0;
+}
+
+header img {
+  width: 100px;
 }
 
 header nav ul {
@@ -48,75 +64,6 @@ header nav a {
 
 header nav a:hover {
   text-decoration: underline;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero > img {
-  display: block;
-  width: 100%;
-}
-
-.hero-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  text-align: center;
-  background: rgba(18, 48, 61, 0.8); 
-}
-
-.hero-text h1,
-.hero-text h2 {
-  position: static; 
-  margin: 0;
-  color: var(--secondary-color);
-  font-family: var(--heading-font);
-}
-
-.hero-text h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.3rem;
-}
-
-.hero-text h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.4;
-}
-
-.hero article {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 60%;
-  padding: 1.5rem;
-  background: var(--secondary-color);
-  overflow: hidden; 
-}
-
-.hero article img {
-  float: right;
-  width: 30%;
-  margin: 0 0 0.5rem 1rem;
-}
-
-footer {
-  padding: 1rem 0;
-  text-align: center;
-}
-
-header {
-  display: grid;
-  grid-template-columns: 120px 1fr 1fr;
-  align-items: center;
-}
-
-header img {
-  width: 100px;
 }
 
 #logo {
@@ -140,44 +87,86 @@ header img {
   color: var(--primary-color);
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
+/* ---------- Hero ---------- */
 .hero {
   position: relative;
 }
 
-.hero img {
+.hero > img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-h1 {
+.hero-text {
   position: absolute;
-  top: 20px;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 16px;
+  padding: 0.5rem 1rem;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  background: rgba(18, 48, 61, 0.8);
 }
 
+.hero-text h1,
+.hero-text h2 {
+  position: static;
+  margin: 0;
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-text h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+/* Cuadro de misión en la esquina inferior derecha */
 .hero article {
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   width: 380px;
+  padding: 1.5rem;
   background-color: var(--secondary-color);
+  overflow: hidden;
 }
 
 .hero article img {
+  display: block;
   float: right;
   width: 125px;
+  height: auto;
+  margin: 0 0 0.5rem 1rem;
 }
 
+/* ---------- Footer ---------- */
+footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 28px;
+}
+
+/* ===== CONTACT PAGE ===== */
 .contact-info,
 .team {
   text-align: center;
@@ -204,6 +193,18 @@ h1 {
   border: 0;
 }
 
+.form form,
+.purposes {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+}
+
 .team figure {
   display: inline-block;
   width: 150px;
@@ -211,21 +212,5 @@ h1 {
 }
 
 .team img {
-  width: 100%;
-}
-
-.form form {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.purposes {
-  display: grid;
-  gap: 0.25rem;
-}
-
-.form input[type="text"],
-.form input[type="email"],
-.form textarea {
   width: 100%;
 }
