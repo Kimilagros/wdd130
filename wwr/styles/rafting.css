@@ -28,7 +28,6 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-/* ---------- Header y navegación (ajusta a tu HTML) ---------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -51,7 +50,6 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Hero ---------- */
 .hero {
   position: relative;
 }
@@ -68,12 +66,12 @@ header nav a:hover {
   width: 100%;
   padding: 0.5rem 1rem;
   text-align: center;
-  background: rgba(18, 48, 61, 0.8); /* basado en --accent1-color */
+  background: rgba(18, 48, 61, 0.8); 
 }
 
 .hero-text h1,
 .hero-text h2 {
-  position: static; /* anula cualquier absolute anterior */
+  position: static; 
   margin: 0;
   color: var(--secondary-color);
   font-family: var(--heading-font);
@@ -90,7 +88,6 @@ header nav a:hover {
   line-height: 1.4;
 }
 
-/* Cuadro de misión en la esquina inferior derecha */
 .hero article {
   position: absolute;
   right: 0;
@@ -98,7 +95,7 @@ header nav a:hover {
   width: 60%;
   padding: 1.5rem;
   background: var(--secondary-color);
-  overflow: hidden; /* contiene el float de la imagen */
+  overflow: hidden; 
 }
 
 .hero article img {
@@ -107,13 +104,11 @@ header nav a:hover {
   margin: 0 0 0.5rem 1rem;
 }
 
-/* ---------- Footer ---------- */
 footer {
   padding: 1rem 0;
   text-align: center;
 }
 
-/* ===== NUEVO: Header con CSS Grid ===== */
 header {
   display: grid;
   grid-template-columns: 120px 1fr 1fr;
@@ -130,7 +125,6 @@ header img {
   color: var(--primary-color);
 }
 
-/* ===== NUEVO: Nav con Flexbox ===== */
 .navigation {
   display: flex;
   list-style: none;
@@ -145,7 +139,6 @@ header img {
   text-decoration: none;
   color: var(--primary-color);
 }
-/* ===== FIN DE LO NUEVO ===== */
 
 .socialmedia a {
   text-decoration: none;
@@ -183,4 +176,56 @@ h1 {
 .hero article img {
   float: right;
   width: 125px;
+}
+
+.contact-info,
+.team {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-info h1 {
+  position: static;
+  opacity: 1;
+  background: none;
+  padding: 0;
+  color: var(--accent1-color);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.team figure {
+  display: inline-block;
+  width: 150px;
+  margin: 0 1rem;
+}
+
+.team img {
+  width: 100%;
+}
+
+.form form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.purposes {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
 }
