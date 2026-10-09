@@ -136,13 +136,14 @@ header nav a:hover {
 }
 
 footer {
-  padding: 1rem 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .socialmedia {
   display: flex;
-  justify-content: center;
   gap: 0.75rem;
 }
 
