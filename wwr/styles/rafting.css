@@ -121,8 +121,8 @@ header nav a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 380px;
-  padding: 1.5rem;
+  width: 800px;
+  padding: 2.5rem 1.5rem 1.5rem;
   background-color: #e6f3f7;
   overflow: hidden;
 }
