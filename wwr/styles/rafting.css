@@ -10,7 +10,7 @@ body {
 }
 
 header, main, footer {
-  width: 840px;
+  width: 100%
   max-width: 100%;
   margin: 0 auto;
 }
@@ -35,7 +35,7 @@ header {
   display: grid;
   grid-template-columns: 120px 1fr 1fr;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
 }
 
 header img {
