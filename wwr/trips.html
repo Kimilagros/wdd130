@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trips | Adventure Sports</title>
-  <meta name="description" content="Adventure Sports offers guided whitewater rafting trips with expert guides, thrilling rapids, and unforgettable river adventures for every skill level.">
+  <meta name="description" content="Explore Adventure Sports whitewater rafting trips, from calm family floats to Class IV rapids, with a full trip comparison table and equipment details.">
   <meta name="author" content="Kimberly Alejos">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -22,52 +22,115 @@
     </nav>
   </header>
 
-  <main>
-    <div class="hero">
-      <img src="images/hero-rafting.jpg" alt="A group of rafters paddling through whitewater rapids">
-      <h1>Adventure Sports</h1>
-      <article>
-        <h2> Our mission</h2>
-        <img src="images/happy-rafters.jpg" alt="Smiling guests in helmets and life jackets holding their paddles after a river trip">
-        <p>Our mission is to share the thrill of the river with everyone, safely and with a smile. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-      </article>
-    </div>
-
-    <section>
-      <h2>History</h2>
-      <p>Founded on a sunny spring morning, Adventure Sports began with one raft and a big idea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+<main>
+    <section class="content trips-intro">
+      <h1>Our Trips</h1>
+      <p>Choose the adventure that fits your group. Every trip includes a safety briefing, a certified guide, and all the gear you need.</p>
     </section>
-
-    <section>
-      <h2>Adventure Awaits You!</h2>
-
-      <figure>
-        <img src="images/rafting-1.jpg" alt="Rafters navigating a large wave in the rapids">
-        <figcaption>Big Wave Rapids</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/rafting-2.jpg" alt="A guide steering a raft through a narrow canyon">
-        <figcaption>Canyon Run</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/rafting-3.jpg" alt="Guests paddling together on a calm stretch of river">
-        <figcaption>Calm Waters</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/rafting-4.jpg" alt="A group cheering after finishing a rafting trip">
-        <figcaption>Team Celebration</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/rafting-5.jpg" alt="A raft floating at sunset along the river">
-        <figcaption>Sunset Float</figcaption>
-      </figure>
+ 
+    <section class="content">
+      <h2>Featured Trips</h2>
+      <div class="card-grid two-col">
+        <article class="card">
+          <img src="images/rafting-3.jpg" alt="Guests paddling together on a calm stretch of river">
+          <div class="card-body">
+            <h3>Calm Waters Float</h3>
+            <p>A relaxed paddle through gentle Class I–II rapids, with time to spot wildlife and enjoy the scenery. Our guides teach basic paddling skills at the start, so no experience is needed. This trip is ideal for families with young children and first-time rafters.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/rafting-2.jpg" alt="A guide steering a raft through a narrow canyon">
+          <div class="card-body">
+            <h3>Canyon Run</h3>
+            <p>Wind through a narrow canyon with fast Class III sections, splashy waves, and a lunch stop on the riverbank. Teamwork matters here, so your guide coaches the group on timing and commands. A great fit for active groups and teens.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/rafting-1.jpg" alt="Rafters navigating a large wave in the rapids">
+          <div class="card-body">
+            <h3>Big Wave Rapids</h3>
+            <p>Our most thrilling full-day trip, packed with big Class IV waves and technical rapids. Paddlers should be comfortable in moving water and in good physical shape. It ends with a team celebration on the shore.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/rafting-5.jpg" alt="A raft floating at sunset along the river">
+          <div class="card-body">
+            <h3>Sunset Float</h3>
+            <p>An evening trip as the light turns golden over the river. The water is calm and the pace is easy, making it a favorite for couples and small groups looking for something memorable and scenic.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+ 
+    <section class="content">
+      <h2>All Available Trips</h2>
+    <table>
+      <caption>Trip comparison</caption>
+      <tr>
+        <th>Trip</th>
+        <th>Rapids class</th>
+        <th>Duration</th>
+        <th>Skill level</th>
+        <th>Minimum age</th>
+        <th>Price per person</th>
+      </tr>
+      <tr>
+        <td>Calm Waters Float</td>
+        <td>I–II</td>
+        <td>2 hours</td>
+        <td>Beginner</td>
+        <td>5</td>
+        <td>$49</td>
+      </tr>
+      <tr>
+        <td>Sunset Float</td>
+        <td>I–II</td>
+        <td>2.5 hours</td>
+        <td>Beginner</td>
+        <td>5</td>
+        <td>$59</td>
+      </tr>
+      <tr>
+        <td>Canyon Run</td>
+        <td>III</td>
+        <td>4 hours</td>
+        <td>Intermediate</td>
+        <td>12</td>
+        <td>$89</td>
+      </tr>
+      <tr>
+        <td>Big Wave Rapids</td>
+        <td>IV</td>
+        <td>Full day</td>
+        <td>Advanced</td>
+        <td>16</td>
+        <td>$139</td>
+      </tr>
+    </table>
+    </section>
+ 
+    <section class="content">
+      <div class="action-grid">
+        <div class="equipment-box">
+          <h2>Equipment Provided</h2>
+          <ul>
+            <li>Self-bailing rafts and lightweight paddles</li>
+            <li>Certified helmets and life jackets in every size</li>
+            <li>Wetsuits and splash jackets for cooler days</li>
+            <li>Dry bags, throw ropes, and a first-aid kit</li>
+          </ul>
+          <p>Please bring a swimsuit or quick-dry clothes, water shoes, sunscreen, and a towel.</p>
+        </div>
+ 
+        <div class="cta-box">
+          <h2>Ready to Book?</h2>
+          <p>Not sure which trip is right for you? Contact us and we will help you choose.</p>
+          <a class="button" href="contact.html">Contact Us</a>
+        </div>
+      </div>
     </section>
   </main>
-
+ 
   <footer>
     <p>© 2026 Adventure Sports © Kimberly Alejos</p>
     <nav class="socialmedia">

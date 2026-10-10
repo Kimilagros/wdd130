@@ -202,3 +202,160 @@ footer {
 .team img {
   width: 100%;
 }
+
+.content {
+  width: 840px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.content h2 {
+  margin-bottom: 0.75rem;
+}
+
+.content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+
+.trips-intro {
+  text-align: center;
+}
+
+.trips-intro h1 {
+  position: static;
+  opacity: 1;
+  background: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  color: #0b6e8a;
+}
+
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.intro-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.intro-grid figcaption {
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.card-grid.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background-color: #e6f3f7;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  margin-bottom: 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #0b6e8a;
+}
+
+.card-body p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cta-box,
+.newsletter-box,
+.equipment-box {
+  padding: 1.25rem;
+  background-color: #e6f3f7;
+}
+
+.equipment-box ul {
+  margin: 0 0 0.75rem 1.25rem;
+  line-height: 1.5;
+}
+
+
+.button,
+.newsletter-box button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  background-color: #0b6e8a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover,
+.newsletter-box button:hover {
+  background-color: #12303d;
+}
+
+/* Formulario newsletter */
+.newsletter-box form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.newsletter-box input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+
+table {
+  width: 100%;
+}
+
+caption {
+  padding-bottom: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+th {
+  padding: 0.75rem;
+  text-align: left;
+  background-color: #0b6e8a;
+  color: #fff;
+}
+
+td {
+  padding: 0.75rem;
+  background-color: #e6f3f7;
+}
