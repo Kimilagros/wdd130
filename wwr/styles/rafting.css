@@ -169,6 +169,22 @@ footer {
   color: #12303d;
 }
 
+address {
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #0b6e8a;
+}
+
+.contact-info a:hover {
+  color: #12303d;
+}
+
+.message-purpose {
+  border: 0;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
